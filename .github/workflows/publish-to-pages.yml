@@ -79,4 +79,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
           with:
-            artifact-derectory: .next
+            artifact-directory: .next
