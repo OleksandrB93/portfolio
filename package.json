@@ -2,13 +2,13 @@
   "name": "cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://OleksandrB93.github.io/portfolio/",
+  "homepage": "https://oleksandrb93.github.io/portfolio/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d .next",
     "predeploy": "npm run build"
   },
   "dependencies": {
