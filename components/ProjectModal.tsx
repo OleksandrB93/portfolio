@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { Info, Link } from "lucide-react";
 import { ScrollArea } from "./ui/scroll-area";
+import Image from "next/image";
 
 interface ProjectModalProps {
   description: string;
@@ -46,7 +47,7 @@ export function ProjectModal({
         </DialogHeader>
         <div>
           <div>
-            <img
+            <Image
               className="rounded-md border border-[#bc0e68]"
               src={img}
               alt="poster"

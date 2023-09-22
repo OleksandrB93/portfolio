@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ProjectModal } from "./ProjectModal";
+import Image from "next/image";
 
 interface ProjectItemProps {
   img: string;
@@ -24,7 +25,7 @@ const ProjectItem = ({
       className="mb-6 border p-4 m-2 mt-[10px] shadow-pink rounded-md hover:shadow-md hover:shadow-[#bc0e5f] transition-shadow duration-300"
     >
       <a href={link}>
-        <img
+        <Image
           className="w-[300px] mx-auto rounded-md mb-2   hover:shadow-md transition-shadow duration-300"
           src={img}
           alt="image"
