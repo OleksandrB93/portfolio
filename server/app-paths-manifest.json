@@ -1,8 +1,8 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(site)/(routes)/contact/page": "app/(site)/(routes)/contact/page.js",
+  "/page": "app/page.js",
   "/(site)/(routes)/about/page": "app/(site)/(routes)/about/page.js",
-  "/(site)/(routes)/projects/page": "app/(site)/(routes)/projects/page.js"
+  "/(site)/(routes)/projects/page": "app/(site)/(routes)/projects/page.js",
+  "/(site)/(routes)/contact/page": "app/(site)/(routes)/contact/page.js"
 }
