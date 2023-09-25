@@ -1,7 +1,6 @@
 "use client";
 
 import ProjectItem from "@/components/ProjectItem";
-import AngularIcon from "@/components/icons/Angular";
 import AxiosIcon from "@/components/icons/AxiosIcon";
 import CSSIcon from "@/components/icons/CSSIcon";
 import ClerkIcon from "@/components/icons/ClerkIcon";
