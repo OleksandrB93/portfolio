@@ -3,8 +3,7 @@ import { Facebook, Github, Linkedin, Mail, Send } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Icon from "./Icon";
 import { v4 as uuidv4 } from "uuid";
-import Image from "next/image";
-import Avatar from "./Avatar";
+
 const Poster = () => {
   const pathname = usePathname();
 
