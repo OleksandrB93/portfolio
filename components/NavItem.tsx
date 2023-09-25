@@ -70,9 +70,9 @@ const NavItem = ({
         <Icon
           className={cn(
             `h-9 w-9 p-[2px] rounded-[6px]`,
-            pathname === path ? color : colorMuted
-            // pathname === path ? "shadow-md" : ""
-          )}
+            pathname === path ? color : colorMuted,
+            path === '/contact' && 'animate-email'
+            )}
         />
         <motion.span
           className={cn(

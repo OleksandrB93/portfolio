@@ -1,6 +1,35 @@
 "use client";
 
 import ProjectItem from "@/components/ProjectItem";
+import AngularIcon from "@/components/icons/Angular";
+import AxiosIcon from "@/components/icons/AxiosIcon";
+import CSSIcon from "@/components/icons/CSSIcon";
+import ClerkIcon from "@/components/icons/ClerkIcon";
+import CloudinaryIcon from "@/components/icons/CloudinaryIcon";
+import EmailJsIcon from "@/components/icons/EmailJsIcon";
+import EmotionIcon from "@/components/icons/EmotionIcon";
+import ExpressIcon from "@/components/icons/ExpressIcon";
+import FramerMotionIcon from "@/components/icons/FramerMotionIcon";
+import HTMLIcon from "@/components/icons/HTMLIcon";
+import JSIcon from "@/components/icons/JSIcon";
+import MDBIcon from "@/components/icons/MDBIcon";
+import MongodbIcon from "@/components/icons/MongodbIcon";
+import NextAuth from "@/components/icons/NextAuth";
+import NextIcon from "@/components/icons/NextIcon";
+import NodeIcon from "@/components/icons/NodeIcon";
+import OpenAiIcon from "@/components/icons/OpenAiIcon";
+import PrismaIcon from "@/components/icons/PrismaIcon";
+import ReactIcon from "@/components/icons/ReactIcon";
+import ReduxIcon from "@/components/icons/ReduxIcon";
+import SassIcon from "@/components/icons/SassIcon";
+import ShadIcon from "@/components/icons/ShadIcon";
+import SocketIcon from "@/components/icons/SocketIcon";
+import StripeIcon from "@/components/icons/StripeIcon";
+import SupabaseIcon from "@/components/icons/SupabaseIcon";
+import SwiperIcon from "@/components/icons/SwiperIcon";
+import TailwindIcon from "@/components/icons/TailwindIcon";
+import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
+import ZustandIcon from "@/components/icons/ZustandIcon";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { v4 as uuidv4 } from "uuid";
 
@@ -10,34 +39,97 @@ const ProjectsPage = () => {
       img: "/imgs/projects/Spotify.jpg",
       title: "Spotify-Clone",
       description:
-        "This is the project for practicing Next.js skills. It uses the Supabase. Authentication is implemented using NextAuth.js with Google provider, GitHub provider, and Email+password methods. Payment through Stripe is also implemented.",
+        "This is a full-stack project for practicing Next.js skills. It uses the Supabase. Authentication is implemented using NextAuth.js with Google provider, GitHub provider, and Email+password methods. Payment through Stripe is also implemented.",
       link: "https://spotify-clone-red-chi.vercel.app/",
       github: "https://github.com/OleksandrB93/spotify-clone",
+      techs: [
+        { icon: <NextIcon />, label: "Next.js" },
+        { icon: <SupabaseIcon />, label: "Supabase" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <ZustandIcon />, label: "Zustand" },
+        { icon: <StripeIcon />, label: "Stripe" },
+      ],
+    },
+    {
+      img: "/imgs/projects/pet.jpg",
+      title: "Petly",
+      description:
+        "This is a full-stack project written in React, using MongoDB and Express. With this project, you can find your perfect pet.",
+      link: "https://chidorishar.github.io/Petly-Frontend/",
+      github: "https://github.com/OleksandrB93/Petly-Frontend",
+      techs: [
+        { icon: <ReactIcon />, label: "React" },
+        { icon: <ReduxIcon />, label: "Redux" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <NodeIcon />, label: "Node.js" },
+        { icon: <ExpressIcon />, label: "Express.js" },
+        { icon: <CloudinaryIcon />, label: "Cloudinary" },
+        { icon: <MongodbIcon />, label: "Mongodb" },
+      ],
     },
     {
       img: "/imgs/projects/discord.jpg",
       title: "Discord-clone",
       description:
-        "This is the project for practicing Next.js skills. It uses the Planetscale. Authentication is implemented using Clerk with Google provider, GitHub provider, and Email+password methods. Chat functionality for communication, including text messaging, audio and video calls, as well as file sharing, is also implemented.",
+        "This is a full-stack project for practicing Next.js skills. It uses the Planetscale. Authentication is implemented using Clerk with Google provider, GitHub provider, and Email+password methods. Chat functionality for communication, including text messaging, audio and video calls, as well as file sharing, is also implemented.",
       link: "https://discord-clone-production-5f3f.up.railway.app/",
       github: "https://github.com/OleksandrB93/discord-clone",
+      techs: [
+        { icon: <NextIcon />, label: "Next.js" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <ZustandIcon />, label: "Zustand" },
+        { icon: <ClerkIcon />, label: "Clerk" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <ZustandIcon />, label: "Zustand" },
+        { icon: <PrismaIcon />, label: "Prisma" },
+        { icon: <ShadIcon />, label: "Shad" },
+        { icon: <SocketIcon />, label: "Socket" },
+      ],
     },
     {
       img: "/imgs/projects/Netflix.jpg",
       title: "Netflix-Clone",
       description:
-        "This is a small project for practicing Next.js skills. It uses the  MongoDB database and the Prisma ORM client. Authentication is implemented using NextAuth.js with Google provider, GitHub provider, and Email+password methods.",
+        "This is a full-stack project for practicing Next.js skills. It uses the  MongoDB database and the Prisma ORM client. Authentication is implemented using NextAuth.js with Google provider, GitHub provider, and Email+password (JWS) methods.",
       link: "https://netflix-nextjs-peach.vercel.app/",
       github: "https://github.com/OleksandrB93/netflix-nextjs/",
+      techs: [
+        { icon: <NextIcon />, label: "Next.js" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <PrismaIcon />, label: "Prisma" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <NextAuth />, label: "NextAuth" },
+        { icon: <MongodbIcon />, label: "Mongodb" },
+        { icon: <EmotionIcon />, label: "Emotion" },
+        { icon: <ZustandIcon />, label: "Zustand" },
+        { icon: <FramerMotionIcon />, label: "FramerMotion" },
+      ],
     },
 
     {
       img: "/imgs/projects/Saas-Ai.jpg",
       title: "Genius-ai",
       description:
-        "This is the project for practicing Next.js skills. It uses the Planetscale. Authentication is implemented using Clerk with Google provider, GitHub provider, and Email+password methods. Payment through Stripe is also implemented.",
+        "This is a full-stack project for practicing Next.js skills. It uses the Planetscale. Authentication is implemented using Clerk with Google provider, GitHub provider, and Email+password methods. Payment through Stripe is also implemented.",
       link: "https://genius-pjog.vercel.app/",
       github: "https://github.com/OleksandrB93/genius-ai",
+      techs: [
+        { icon: <NextIcon />, label: "Next.js" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <ClerkIcon />, label: "Clerk" },
+        { icon: <PrismaIcon />, label: "Prisma" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <ZustandIcon />, label: "Zustand" },
+        { icon: <StripeIcon />, label: "Stripe" },
+        { icon: <OpenAiIcon />, label: "OpenAi" },
+        { icon: <ShadIcon />, label: "Shad" },
+      ],
     },
 
     {
@@ -47,6 +139,13 @@ const ProjectsPage = () => {
         "The landing page was created using React + Typescript. The layout is made for two breakpoints.",
       link: "https://oleksandrb93.github.io/funiro/",
       github: "https://github.com/OleksandrB93/funiro",
+      techs: [
+        { icon: <ReactIcon />, label: "React" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <FramerMotionIcon />, label: "FramerMotion" },
+        { icon: <SwiperIcon />, label: "Swiper" },
+      ],
     },
     {
       img: "/imgs/projects/gamePlatform.jpg",
@@ -55,6 +154,14 @@ const ProjectsPage = () => {
         "The landing page was created using React + Typescript. The layout is made for two breakpoints.",
       link: "https://oleksandrb93.github.io/game-platform/",
       github: "https://github.com/OleksandrB93/game-platform",
+      techs: [
+        { icon: <ReactIcon />, label: "React" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <FramerMotionIcon />, label: "FramerMotion" },
+        { icon: <SwiperIcon />, label: "Swiper" },
+        { icon: <EmailJsIcon />, label: "EmailJs" },
+      ],
     },
     {
       img: "/imgs/projects/filmoteka.jpg",
@@ -71,6 +178,13 @@ const ProjectsPage = () => {
       //   Other skills (Communication, Presentations, Teamwork, SMART, Trello, Postman)",
       link: "https://victor-rochnyak.github.io/Filmoteka/",
       github: "https://github.com/Victor-Rochnyak/Filmoteka",
+      techs: [
+        { icon: <SwiperIcon />, label: "Swiper" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <JSIcon />, label: "JavaScript" },
+        { icon: <MDBIcon />, label: "Movies DB" },
+        { icon: <SassIcon />, label: "Sass" },
+      ],
     },
     {
       img: "/imgs/projects/iceCream.jpg",
@@ -79,6 +193,11 @@ const ProjectsPage = () => {
         "This is a team project that we did with my group mates (11 people). I was front-end developer. I made a section Hero-Head, and animation. The landing page is created using HTML, CSS, Java Script. The markup is created for three breakpoints: 480px, 768px, and 1200px. Observed semantics according to HTML5 standards. The sizes of vector and raster graphics are optimized, there is support for displaying pictures for retina screens. Added page favicon. BEM methodology, SASS preprocessor were also used.",
       link: "https://victor-rochnyak.github.io/IceCream/",
       github: "https://github.com/Victor-Rochnyak/IceCream",
+      techs: [
+        { icon: <JSIcon />, label: "JavaScript" },
+        { icon: <HTMLIcon />, label: "HTML" },
+        { icon: <CSSIcon />, label: "CSS" },
+      ],
     },
     {
       img: "/imgs/projects/webStudio.jpg",
@@ -87,13 +206,18 @@ const ProjectsPage = () => {
         "The landing page was created using only HTML and CSS. The layout is made for three breakpoints: 480px, 768px and 1200px. All background and content raster images are responsive and support x1 and x2 screens. BEM methodology, SASS preprocessor were also used.",
       link: "https://oleksandrb93.github.io/goit-markup-hw-08/",
       github: "https://github.com/OleksandrB93/goit-markup-hw-08",
+      techs: [
+        { icon: <JSIcon />, label: "JavaScript" },
+        { icon: <HTMLIcon />, label: "HTML" },
+        { icon: <CSSIcon />, label: "CSS" },
+      ],
     },
   ];
 
   return (
     <div
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
-      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background flex justify-center"
+      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 flex justify-center"
     >
       <ScrollArea className="h-[500px] w-[350px] rounded-md border-none p-4">
         {projects.map((project) => (

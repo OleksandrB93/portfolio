@@ -3,7 +3,8 @@ import { Facebook, Github, Linkedin, Mail, Send } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Icon from "./Icon";
 import { v4 as uuidv4 } from "uuid";
-
+import Image from "next/image";
+import Avatar from "./Avatar";
 const Poster = () => {
   const pathname = usePathname();
 
@@ -32,7 +33,7 @@ const Poster = () => {
   const links = [
     {
       name: Mail,
-      label: "Mail",
+      label: "EMail",
       link: "https://mail.google.com/mail/?view=cm&fs=1&to=barabashsan4ik@gmail.com",
     },
     {
@@ -71,7 +72,7 @@ const Poster = () => {
           </p>
           <ul className="flex justify-center gap-x-5 mt-4">
             {links.map(({ name, link, label }) => (
-              <li key={uuidv4()}>
+              <li key={uuidv4()} >
                 <Icon name={name} color={pathClass} link={link} label={label}/>
               </li>
             ))}

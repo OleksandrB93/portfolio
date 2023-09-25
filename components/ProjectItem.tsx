@@ -10,6 +10,7 @@ interface ProjectItemProps {
   description: string;
   link: string;
   github: string;
+  techs?:any
 }
 
 const ProjectItem = ({
@@ -18,19 +19,20 @@ const ProjectItem = ({
   description,
   link,
   github,
+  techs
 }: ProjectItemProps) => {
   return (
     <motion.div
       whileHover={{ scale: 1.01 }}
       className="mb-6 border p-4 m-2 mt-[10px] shadow-pink rounded-md hover:shadow-md hover:shadow-[#bc0e5f] transition-shadow duration-300"
     >
-      <a href={link}>
-        <Image
-          className="w-[300px] mx-auto rounded-md mb-2   hover:shadow-md transition-shadow duration-300"
-          src={img}
-          alt="image"
-        />
-      </a>
+      <Image
+        className="w-[300px] mx-auto rounded-md   hover:shadow-md transition-shadow duration-300"
+        src={img}
+        alt="image"
+        width="400"
+        height="400"
+      />
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
           <a
@@ -52,6 +54,7 @@ const ProjectItem = ({
           link={link}
           title={title}
           github={github}
+          techs={techs}
         />
       </div>
     </motion.div>

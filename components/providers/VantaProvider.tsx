@@ -22,7 +22,7 @@ export function VantaProvider({ children }: { children: React.ReactNode }) {
           lowlightColor: 0x70707,
           baseColor: 0x0,
           blurFactor: 0.9,
-          speed: 2.0,
+          speed: 4.0,
           zoom: 1.5,
         })
       );

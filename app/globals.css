@@ -112,11 +112,68 @@ body,
 }
 
 .shadow-mode {
-  border:1px solid #00bfff;
+  border: 1px solid #00bfff;
   box-shadow: #00bfff 0px 0px 5px 0.2px;
 }
 /* #31bbe9 */
-.shadow-pink{
-  border:1px solid #bc0e68;
+.shadow-pink {
+  border: 1px solid #bc0e68;
   box-shadow: #bc0e68 0px 0px 5px 0.2px;
+}
+
+.animate-email {
+  animation: jello-horizontal 1s infinite;
+}
+
+@keyframes jello-horizontal {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-back {
+  animation: color-change-4x 1s infinite;
+}
+@keyframes color-change-4x {
+  0% {
+    background: #19dcea;
+  }
+  33.3333% {
+    background: #ff009d;
+  }
+  66.666% {
+    background: #00f784;
+  }
+  100% {
+    background: #f5be10;
+  }
 }

@@ -11,6 +11,7 @@ import {
 import { Info, Link } from "lucide-react";
 import { ScrollArea } from "./ui/scroll-area";
 import Image from "next/image";
+import SwiperSlider from "./SwiperSlider";
 
 interface ProjectModalProps {
   description: string;
@@ -18,6 +19,7 @@ interface ProjectModalProps {
   title: string;
   link: string;
   github: string;
+  techs?: any;
 }
 
 export function ProjectModal({
@@ -26,39 +28,47 @@ export function ProjectModal({
   img,
   link,
   github,
+  techs,
 }: ProjectModalProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="text-[#bc0e68] hover:bg-[#bc0e68] hover:text-primary transition-all duration-300">
+        <Button
+          variant="outline"
+          className="text-[#bc0e68] hover:bg-[#bc0e68] hover:text-primary transition-all duration-300"
+        >
           <Info />
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] w-[500px] p-[10px]">
+      <DialogContent className=" sm:max-w-[325px] p-[10px]">
         <DialogHeader>
           <a
             href={link}
-            className="flex text-primary hover:underline hover:text-[#bc0e68] font-bold font-mono transition-text duration-300"
+            className=" text-primary hover:underline hover:text-[#bc0e68] font-bold font-mono transition-text duration-300"
           >
-            <DialogTitle className="flex jc items-center">
+            <DialogTitle className="flex justify-center items-center">
               {title} <Link className="ml-2" />
             </DialogTitle>
           </a>
         </DialogHeader>
         <div>
           <div>
-            <Image
-              className="rounded-md border border-[#bc0e68]"
-              src={img}
-              alt="poster"
-            />
-            <ScrollArea className=" h-[100px] p-2 mt-2 rounded-md border border-[#bc0e68]">
+            <div className="">
+              <Image
+                className="rounded-md mx-auto border border-[#bc0e68]"
+                src={img}
+                alt="poster"
+                width={400}
+                height={400}
+              />
+              <SwiperSlider techs={techs}/>
+            </div>
+            <ScrollArea className=" h-[100px] p-2 rounded-md border border-[#bc0e68]">
               <DialogDescription className="">{description}</DialogDescription>
             </ScrollArea>
           </div>
         </div>
 
-        <DialogFooter></DialogFooter>
       </DialogContent>
     </Dialog>
   );

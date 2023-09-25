@@ -17,7 +17,7 @@ const Icon = ({ name: Icon, color, size, link, label }: IconProps) => {
       className="relative group bg-background flex justify-center items-center rounded-full shadow-lg cursor-pointer"
     >
       <motion.div
-        className="group "
+        className="group animate-link"
         whileHover={{
           scale: 1.2,
           transition: { duration: 0.2 },
