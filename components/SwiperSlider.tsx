@@ -25,11 +25,11 @@ const SwiperSlider = ({ techs }: SwiperSliderProps) => {
       initialSlide={0}
       grabCursor={true}
       freeMode={true}
-      // autoplay={{
-      //   delay: 1000,
-      //   disableOnInteraction: false,
-      //   pauseOnMouseEnter: true,
-      // }}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
       className="bg-background/90 w-[300px] h-[49px] my-2"
     >
       {techs.map((tech: any) => (

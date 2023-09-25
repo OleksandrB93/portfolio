@@ -51,6 +51,35 @@ const ProjectsPage = () => {
       ],
     },
     {
+      img: "/imgs/projects/Weather.jpg",
+      title: "Weather forecast",
+      description:
+        "This is the projectk project for practicing React+TypeSctipt skills. It uses the Weather API.",
+      link: "https://oleksandrb93.github.io/weather/",
+      github: "https://github.com/OleksandrB93/weather",
+      techs: [
+        { icon: <ReactIcon />, label: "React" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <AxiosIcon />, label: "Axios" },
+        { icon: <FramerMotionIcon />, label: "FramerMotion" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+      ],
+    },
+    {
+      img: "/imgs/projects/Vibro.jpg",
+      title: "Vibropress",
+      description: "This is the Vibropress project.",
+      link: "https://www.vibropress.net/",
+      github: "https://github.com/OleksandrB93/my-vibropress",
+      techs: [
+        { icon: <ReactIcon />, label: "React" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <SwiperIcon />, label: "Swiper" },
+        { icon: <FramerMotionIcon />, label: "FramerMotion" },
+        { icon: <EmotionIcon />, label: "Emotion" },
+      ],
+    },
+    {
       img: "/imgs/projects/pet.jpg",
       title: "Petly",
       description:
