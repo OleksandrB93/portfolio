@@ -18,6 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const ContactPage = () => {
   const [loading, setLoading] = useState(false);

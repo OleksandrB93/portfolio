@@ -7,6 +7,7 @@ import { VantaProvider } from "@/components/providers/VantaProvider";
 import { cn } from "@/lib/utils";
 import Loading from "@/components/Loading";
 import { Toaster } from "@/components/ui/toaster";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" async></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js" async></script>
-
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"
+          async
+        ></script>
       </head>
       <body
         style={{
@@ -42,6 +48,7 @@ export default function RootLayout({
               <Loading />
               <main>
                 {children}
+
                 <Toaster />
               </main>
             </div>

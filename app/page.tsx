@@ -1,5 +1,6 @@
 "use client";
 
+import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
@@ -10,7 +11,7 @@ const HomePage = () => {
   return (
     <div
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
-      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 p-4 pt-6 glass-effect "
+      className=" relative h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 p-4 pt-6 glass-effect "
     >
       <div className="flex flex-col justify-center font-serif text-primary">
         <TypeAnimation
@@ -58,8 +59,8 @@ const HomePage = () => {
             fontSize: "20px",
             height: "225px",
             fontWeight: "400px",
-            fontStyle:'italic',
-            marginBottom: '16px'
+            fontStyle: "italic",
+            marginBottom: "16px",
           }}
           repeat={0}
           speed={70}
@@ -78,12 +79,12 @@ const HomePage = () => {
 
         <div className="flex justify-center items-center gap-x-12">
           <a
-            href="/work"
+            href="/projects"
             className="animate-bounceX bg-orange-500 text-background px-4 py-2 rounded-md"
           >
             <ArrowRight />
           </a>
-          <a href="/work">
+          <a href="/projects">
             <div
               className="scale-130 rounded-xl bg-orange-500
           relative flex justify-center items-center bg-[#000000cc] overflow-hidden

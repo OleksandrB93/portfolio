@@ -13,6 +13,7 @@ import ReduxIcon from "@/components/icons/ReduxIcon";
 import SassIcon from "@/components/icons/SassIcon";
 import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
 import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
