@@ -83,7 +83,7 @@ const AboutPage = () => {
   return (
     <div
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
-      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 p-4 pt-6 pl-8"
+      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background p-4 pt-6 pl-8"
     >
       <h1 className="text-5xl font-bold font-mono text-[#22bf78] mb-4">
         about me
@@ -103,7 +103,7 @@ const AboutPage = () => {
           the latest technological and market trends.
         </p>
       </div>
-      <Separator className="bg-[#22bf78]/40" />
+      <Separator className="bg-[#22bf78]" />
       <div className="">
         <h2 className="text-3xl font-bold font-mono mt-6 mb-6 text-[#22bf78]">
           my skills:
@@ -122,7 +122,7 @@ const AboutPage = () => {
               <div className="w-10 h-10">{icon}</div>
               <p
                 style={{ color: `${color}` }}
-                className="absolute top-[105%] left-[50%] translate-x-[-50%] bg-primary px-2 rounded-sm opacity-0 group-hover:opacity-100"
+                className="absolute top-[105%] left-[50%] translate-x-[-50%] bg-foreground px-2 rounded-sm opacity-0 group-hover:opacity-100"
               >
                 {label}
               </p>

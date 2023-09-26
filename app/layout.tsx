@@ -7,7 +7,6 @@ import { VantaProvider } from "@/components/providers/VantaProvider";
 import { cn } from "@/lib/utils";
 import Loading from "@/components/Loading";
 import { Toaster } from "@/components/ui/toaster";
-import { Skeleton } from "@/components/ui/skeleton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link
+          rel="stylesheet"
+          href="https://portfolio-tan-nine-85.vercel.app/_next/static/css/8b74f3e07333c2f9.css"
+          as="style"
+        />
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
           async

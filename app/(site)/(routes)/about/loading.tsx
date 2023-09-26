@@ -1,9 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Loading() {
   // Or a custom loading skeleton component
   return (
-    <div className="absolute z-50 flex justify-center items-center h-[500px] rounded-md bg-background/90">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="absolute z-50 flex justify-center items-center h-[500px] rounded-md bg-background/90"
+    >
       <div className="w-[80px]  flex flex-col justify-center items-center gap-y-10 bg-background rounded-md ">
         <Skeleton className="h-11 w-11 rounded-md" />
         <Skeleton className="h-11 w-11 rounded-md" />
@@ -43,6 +51,6 @@ export default function Loading() {
           <Skeleton className="h-[50px] w-[50px] ml-1.5" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

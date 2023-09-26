@@ -93,7 +93,7 @@ const ContactPage = () => {
   return (
     <div
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
-      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 p-8 pt-6"
+      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background p-8 pt-6"
     >
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

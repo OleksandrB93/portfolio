@@ -245,7 +245,7 @@ const ProjectsPage = () => {
   return (
     <div
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
-      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 flex justify-center"
+      className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background flex justify-center"
     >
       <ScrollArea className="h-[500px] w-[350px] rounded-md border-none p-4">
         {projects.map((project) => (

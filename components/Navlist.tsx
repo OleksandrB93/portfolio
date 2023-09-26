@@ -54,7 +54,7 @@ const NavList = () => {
     }, 400);
 
     return () => clearTimeout(timeoutId);
-  }, [pathname]);
+  }, [pathname, isPathChanged]);
 
   return (
     <motion.ul className="relative w-[80px] h-[500px] flex flex-col justify-center items-center gap-y-10 bg-background rounded-l-lg">
