@@ -66,7 +66,7 @@ const ProjectsPage = () => {
       ],
     },
     {
-      img: "/imgs/projects/Vibro.jpg",
+      img: "/imgs/projects/vibro.jpg",
       title: "Vibropress",
       description: "This is the Vibropress project.",
       link: "https://www.vibropress.net/",

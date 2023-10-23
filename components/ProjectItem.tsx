@@ -24,7 +24,7 @@ const ProjectItem = ({
   return (
     <motion.div
       whileHover={{ scale: 1.01 }}
-      className="max-w-[306px] mb-6 border p-4 m-2 mt-[10px] shadow-pink rounded-md hover:shadow-md hover:shadow-[#bc0e5f] transition-shadow duration-300"
+      className="w-[306px] mb-6 border p-4 m-2 mt-[10px] shadow-pink rounded-md hover:shadow-md hover:shadow-[#bc0e5f] transition-shadow duration-300"
     >
       <Image
         className="mx-auto rounded-md   hover:shadow-md transition-shadow duration-300"
