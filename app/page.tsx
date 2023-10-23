@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
-      className=" relative h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background/70 p-4 pt-6 glass-effect "
+      className=" relative h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background p-4 pt-6 glass-effect "
     >
       <div className="flex flex-col justify-center font-serif text-primary">
         <TypeAnimation
