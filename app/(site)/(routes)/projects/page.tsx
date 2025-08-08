@@ -45,6 +45,7 @@ const ProjectsPage = () => {
       techs:[
         { icon: <NextIcon />, label: "Next.js" },
         { icon: <TailwindIcon />, label: "Tailwind" },
+        {icon: <AIIcon/>, label: "Gimini AI"},
         { icon: <TypeScriptIcon />, label: "TypeScript" },
         { icon: <MongodbIcon />, label: "Mongodb" },
         { icon: <ShadIcon />, label: "Shad" },
