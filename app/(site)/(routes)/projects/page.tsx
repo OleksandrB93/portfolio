@@ -48,7 +48,7 @@ const ProjectsPage = () => {
         { icon: <TypeScriptIcon />, label: "TypeScript" },
         { icon: <MongodbIcon />, label: "Mongodb" },
         { icon: <ShadIcon />, label: "Shad" },
-        { icon: <ShieldCheck />, label: "Next Auth" },
+        { icon: <ShieldCheck className="text-foreground" />, label: "Next Auth" },
         {icon: <GraphQLIcon/>, label: "GraphQL"}
       ]
     },
