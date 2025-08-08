@@ -37,7 +37,7 @@ import { v4 as uuidv4 } from "uuid";
 const ProjectsPage = () => {
   const projects = [
     {
-      img:'https://ibb.co/qMHx0HZf',
+      img:'/imgs/projects/GraphQL.png',
       title: 'Next Posts App',
       desctiption: 'his application was created to demonstrate the functionality of authentication, GraphQL, and Apollo.',
       link:'https://nextjs-demo-theta-ashen.vercel.app',
