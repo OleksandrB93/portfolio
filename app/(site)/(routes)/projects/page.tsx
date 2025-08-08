@@ -39,10 +39,10 @@ const ProjectsPage = () => {
     {
       img:'/imgs/projects/GraphQL.png',
       title: 'Next Posts App',
-      desctiption: 'his application was created to demonstrate the functionality of authentication, GraphQL, and Apollo.',
+      description: 'his application was created to demonstrate the functionality of authentication, GraphQL, and Apollo.',
       link:'https://nextjs-demo-theta-ashen.vercel.app',
       github:'https://github.com/OleksandrB93/nextjs-demo',
-      tech:[
+      techs:[
         { icon: <NextIcon />, label: "Next.js" },
         { icon: <TailwindIcon />, label: "Tailwind" },
         { icon: <TypeScriptIcon />, label: "TypeScript" },
@@ -265,6 +265,7 @@ const ProjectsPage = () => {
       style={{ position: "absolute", top: 0, left: 0, zIndex: 30 }}
       className="h-[500px] w-[400px] ml-[430px] rounded-r-md bg-background flex justify-center"
     >
+      {/* @ts-ignore */}
       <ScrollArea className="h-[500px] w-[350px] rounded-md border-none p-4">
         {projects.map((project) => (
           <ProjectItem key={uuidv4()} {...project} />
