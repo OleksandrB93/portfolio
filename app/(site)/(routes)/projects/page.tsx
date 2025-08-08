@@ -9,6 +9,7 @@ import EmailJsIcon from "@/components/icons/EmailJsIcon";
 import EmotionIcon from "@/components/icons/EmotionIcon";
 import ExpressIcon from "@/components/icons/ExpressIcon";
 import FramerMotionIcon from "@/components/icons/FramerMotionIcon";
+import GraphQLIcon from "@/components/icons/GraphQLIcon";
 import HTMLIcon from "@/components/icons/HTMLIcon";
 import JSIcon from "@/components/icons/JSIcon";
 import MDBIcon from "@/components/icons/MDBIcon";
@@ -30,10 +31,27 @@ import TailwindIcon from "@/components/icons/TailwindIcon";
 import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
 import ZustandIcon from "@/components/icons/ZustandIcon";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { ShieldCheck } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
 
 const ProjectsPage = () => {
   const projects = [
+    {
+      img:'https://ibb.co/qMHx0HZf',
+      title: 'Next Posts App',
+      desctiption: 'his application was created to demonstrate the functionality of authentication, GraphQL, and Apollo.',
+      link:'https://nextjs-demo-theta-ashen.vercel.app',
+      github:'https://github.com/OleksandrB93/nextjs-demo',
+      tech:[
+        { icon: <NextIcon />, label: "Next.js" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <MongodbIcon />, label: "Mongodb" },
+        { icon: <ShadIcon />, label: "Shad" },
+        { icon: <ShieldCheck />, label: "Next Auth" },
+        {icon: <GraphQLIcon/>, label: "GraphQL"}
+      ]
+    },
     {
       img: "/imgs/projects/Spotify.jpg",
       title: "Spotify-Clone",
