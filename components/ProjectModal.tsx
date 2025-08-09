@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -12,6 +11,7 @@ import { Info, Link } from "lucide-react";
 import { ScrollArea } from "./ui/scroll-area";
 import Image from "next/image";
 import SwiperSlider from "./SwiperSlider";
+import { Textarea } from "./ui/textarea";
 
 interface ProjectModalProps {
   description: string;
@@ -61,14 +61,18 @@ export function ProjectModal({
                 width={400}
                 height={400}
               />
-              <SwiperSlider techs={techs}/>
+              <SwiperSlider techs={techs} />
             </div>
-            <ScrollArea className=" h-[100px] p-2 rounded-md border border-[#bc0e68]">
+            {/* <ScrollArea className=" h-[100px] p-2 rounded-md border border-[#bc0e68]">
               <DialogDescription className="">{description}</DialogDescription>
-            </ScrollArea>
+            </ScrollArea> */}
+            <Textarea
+              className=" h-[100px] p-2 rounded-md border border-[#bc0e68]"
+              value={description}
+              readOnly
+            />
           </div>
         </div>
-
       </DialogContent>
     </Dialog>
   );

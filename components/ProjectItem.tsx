@@ -42,7 +42,7 @@ const ProjectItem = ({
             {title}
           </a>
           <a
-            className="text-primary hover:underline  hover:text-[#bc0e68] font-bold font-mono transition-text duration-300"
+            className="text-primary/60 hover:underline  hover:text-[#bc0e68] font-bold font-mono transition-text duration-300"
             href={github}
           >
             GitHub

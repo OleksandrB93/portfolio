@@ -38,9 +38,6 @@ const SwiperSlider = ({ techs }: SwiperSliderProps) => {
           className=" p-[2px] bg-white w-4 h-4 rounded-md"
         >
           {tech.icon}
-          {/* <p className="absolute z-50 -bottom-3 left-0 -translate-x-1/2 px-1 bg-primary text-[#bc0e68] rounded-md  transition-all duration-300">
-            {tech.label}
-          </p> */}
         </SwiperSlide>
       ))}
     </Swiper>

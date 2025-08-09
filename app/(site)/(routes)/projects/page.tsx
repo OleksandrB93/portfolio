@@ -1,6 +1,7 @@
 "use client";
 
 import ProjectItem from "@/components/ProjectItem";
+import AIIcon from "@/components/icons/AIIcon";
 import AxiosIcon from "@/components/icons/AxiosIcon";
 import CSSIcon from "@/components/icons/CSSIcon";
 import ClerkIcon from "@/components/icons/ClerkIcon";
@@ -24,6 +25,7 @@ import ReduxIcon from "@/components/icons/ReduxIcon";
 import SassIcon from "@/components/icons/SassIcon";
 import ShadIcon from "@/components/icons/ShadIcon";
 import SocketIcon from "@/components/icons/SocketIcon";
+import StrapiIcon from "@/components/icons/StrapiIcon";
 import StripeIcon from "@/components/icons/StripeIcon";
 import SupabaseIcon from "@/components/icons/SupabaseIcon";
 import SwiperIcon from "@/components/icons/SwiperIcon";
@@ -37,21 +39,26 @@ import { v4 as uuidv4 } from "uuid";
 const ProjectsPage = () => {
   const projects = [
     {
-      img:'/imgs/projects/GraphQL.png',
-      title: 'Next Posts App',
-      description: 'his application was created to demonstrate the functionality of authentication, GraphQL, and Apollo.',
-      link:'https://nextjs-demo-theta-ashen.vercel.app',
-      github:'https://github.com/OleksandrB93/nextjs-demo',
-      techs:[
+      img: "/imgs/projects/GraphQL.png",
+      title: "Next js with Strapi headless CMS, GraphQL and Apollo",
+      description:
+        "This application was created to demonstrate the functionality of authentication with NextAuth.js, GraphQL, and Apollo. Built with Next.js and TypeScript for a robust development experience, it utilizes Tailwind CSS for styling and MongoDB for data storage. The project integrates Gimini AI for intelligent features, Strapi as a headless CMS, Shad UI components for modern interface design, Next Auth for secure authentication, and GraphQL for efficient data querying.",
+      link: "https://nextjs-demo-theta-ashen.vercel.app",
+      github: "https://github.com/OleksandrB93/nextjs-demo",
+      techs: [
         { icon: <NextIcon />, label: "Next.js" },
         { icon: <TailwindIcon />, label: "Tailwind" },
-        {icon: <AIIcon/>, label: "Gimini AI"},
+        { icon: <AIIcon />, label: "Gimini AI" },
         { icon: <TypeScriptIcon />, label: "TypeScript" },
         { icon: <MongodbIcon />, label: "Mongodb" },
         { icon: <ShadIcon />, label: "Shad" },
-        { icon: <ShieldCheck className="text-black w-[44px] h-[44px]" />, label: "Next Auth" },
-        {icon: <GraphQLIcon/>, label: "GraphQL"}
-      ]
+        { icon: <StrapiIcon />, label: "Strapi" },
+        {
+          icon: <ShieldCheck className="text-black w-[44px] h-[44px]" />,
+          label: "Next Auth",
+        },
+        { icon: <GraphQLIcon />, label: "GraphQL" },
+      ],
     },
     {
       img: "/imgs/projects/Spotify.jpg",
