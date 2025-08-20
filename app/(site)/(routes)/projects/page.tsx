@@ -9,6 +9,7 @@ import CloudinaryIcon from "@/components/icons/CloudinaryIcon";
 import EmailJsIcon from "@/components/icons/EmailJsIcon";
 import EmotionIcon from "@/components/icons/EmotionIcon";
 import ExpressIcon from "@/components/icons/ExpressIcon";
+import FirebaseIcon from "@/components/icons/FirebaseIcon";
 import FramerMotionIcon from "@/components/icons/FramerMotionIcon";
 import GraphQLIcon from "@/components/icons/GraphQLIcon";
 import HTMLIcon from "@/components/icons/HTMLIcon";
@@ -30,14 +31,36 @@ import StripeIcon from "@/components/icons/StripeIcon";
 import SupabaseIcon from "@/components/icons/SupabaseIcon";
 import SwiperIcon from "@/components/icons/SwiperIcon";
 import TailwindIcon from "@/components/icons/TailwindIcon";
+import TanstackIcon from "@/components/icons/TanstackIcon";
 import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
 import ZustandIcon from "@/components/icons/ZustandIcon";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ShieldCheck } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
+import Image from "next/image";
 
 const ProjectsPage = () => {
   const projects = [
+    {
+      img: "/imgs/projects/nartex.png",
+      title: "Nartex",
+      description: "The project created for the company Nartex.",
+      link: "https://nartex.vercel.app/",
+      github: "https://github.com/OleksandrB93/nartex",
+      techs: [
+        { icon: <NextIcon />, label: "Next.js" },
+        { icon: <TailwindIcon />, label: "Tailwind" },
+        { icon: <TypeScriptIcon />, label: "TypeScript" },
+        { icon: <FirebaseIcon />, label: "Firebase" },
+        { icon: <ShadIcon />, label: "Shad" },
+        {
+          icon: <ShieldCheck className="text-black w-[44px] h-[44px]" />,
+          label: "Next Auth",
+        },
+        { icon: <Image className="w-[45px] h-[45px]" src="/imgs/projects/tanstack.png" alt="Tanstack" width={32} height={32} />, label: "Tanstack" },
+        { icon: <FramerMotionIcon />, label: "FramerMotion" },
+      ],
+    },
     {
       img: "/imgs/projects/GraphQL.png",
       title: "Next js with Strapi headless CMS, GraphQL and Apollo",
